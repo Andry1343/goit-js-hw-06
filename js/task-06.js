@@ -6,9 +6,9 @@ validInput.addEventListener("blur", onBlur);
 function onBlur() {
   if (validInput.value.length === lengthInput) {
     validInput.classList.remove("invalid");
-    return validInput.classList.add("valid");
+    validInput.classList.add("valid");
   } else {
     validInput.classList.remove("valid");
-    return validInput.classList.add("invalid");
+    validInput.classList.add("invalid");
   }
 }
