@@ -1,9 +1,16 @@
 const inputForm = document.querySelector(".login-form");
-const inputEmail = document.querySelector('[type="email"]').required = true;
-const inputPassword = document.querySelector('[type="password"]').required = true;
+const inputEmail = document.querySelector('[type="email"]');
+const inputPassword = document.querySelector('[type="password"]');
 const btnSubmit = document.querySelector('[type="submit"]');
 
+inputForm.addEventListener('submit', onSubmittCheck);
 inputForm.addEventListener("submit", onSubmit);
+
+function onSubmittCheck() {
+  if (inputEmail.value.trim() === "" || inputPassword.value.trim() === "") {
+    alert("Вы заполнили не все поля формы!");
+  }
+}
 
 function onSubmit(evt) {
   evt.preventDefault();
@@ -15,3 +22,4 @@ function onSubmit(evt) {
   inputForm.reset();
   console.log(data);
 }
+//.required = true;

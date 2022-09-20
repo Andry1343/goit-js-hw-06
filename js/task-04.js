@@ -9,11 +9,11 @@ const buttonIncrement = document.querySelector(
 let valueEl = document.querySelector("#value");
 
 buttonDecrement.addEventListener("click", () => {
-  console.log((counterValue -= 1));
-  valueEl.textContent = counterValue;
+  //console.log((counterValue -= 1));
+  valueEl.textContent = counterValue -= 1;
 });
 
 buttonIncrement.addEventListener("click", () => {
-  console.log((counterValue += 1));
-  valueEl.textContent = counterValue;
+  //console.log((counterValue += 1));
+  valueEl.textContent = counterValue += 1;
 });

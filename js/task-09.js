@@ -8,8 +8,12 @@ let body = document.querySelector('body');
 
  buttonChangeColor.addEventListener("click", onSubmit);
 
- function onSubmit(evt) {
+  function onSubmit() {
+  body.style.backgroundColor = getRandomHexColor();
+  backgroundSpan.replaceChildren(getRandomHexColor(toString))
+}  
+   
+/* function onSubmit(evt) {
   body.style.backgroundColor = getRandomHexColor();
   backgroundSpan.textContent = body.style.backgroundColor;
-  
-} 
+}  */
