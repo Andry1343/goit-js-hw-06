@@ -12,7 +12,7 @@ function onSubmit(evt) {
     email: email.value,
     password: password.value,
   };
-  if (inputEmail.value.trim() === "" || inputPassword.value.trim() === "") {
+  if (data.email.trim() === "" || data.password.trim() === "") {
     alert("Вы заполнили не все поля формы!");
   }
   inputForm.reset();
